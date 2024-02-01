@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV BAR</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .navch{
+            display: inline-block;
+            padding-inline: 20px;
+            line-height: 50px;
+          }
+          .serch{
+            display: none;
+          }
+         
+          /* ul li{
+            width: fit-content;
+          } */
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-shadow: 2px 2px black;
+            
+        }
+        .navch:hover{
+            background-color: blue;
+        }
+        .navch:hover .serch{
+            display: inline;
+        }
+        #one{
+            list-style-type: none;
+            width: fit-content;
+            margin: auto;
+            
+            }
+            #two{
+                list-style-type: none;
+                display: block;
+            
+            }
+           
+      header{
+        width: 80%;
+        background-color: gray;
+        margin: auto;
+        border-radius: 10px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="one">
+                <li class="navch">
+                    <a href="">home</a>
+                </li>
+                <li class="navch">
+                    <a href="">about</a>
+                </li>
+                <li class="navch">
+                    <a href="">contact</a>
+                </li>
+                <li class="navch">
+                    <a href="">services</a>
+                    <ul id="two">
+                        <li class="serch">seo</li>
+                        <li class="serch">web</li>
+                        <li class="serch">data</li>
+                    </ul>
+                </li>
+                <li class="navch">
+                    <a href="">login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
